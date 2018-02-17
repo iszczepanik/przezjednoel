@@ -17,12 +17,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Dosis" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
+<div id="page" class="container-fluid">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
+
+
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 header-col">
+            <header id="header-izabela">
+                <a href="<?php echo esc_url( home_url( '/' )); ?>">
+                    <div id="izabela">IZABELA</div>
+                    <div id="przezjedno">PRZEZ JEDNO <span id="el">EL</span></div>
+                </a>
+                <img class="vegan-img" src="<?php bloginfo('template_url'); ?>/inc/assets/img/vegan.png" />
+            </header>
+        </div>
+        <div class="col-lg-9">tu kontent<br/>
+
+
+
+
+
+    <!--
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 	<header id="masthead" class="site-header navbar-static-top <?php echo wp_bootstrap_starter_header_class(); ?>" role="banner">
         <div class="container">
@@ -57,7 +77,7 @@
 
             </nav>
         </div>
-	</header><!-- #masthead -->
+	</header>
     <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
         <div id="page-sub-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
             <div class="container">
@@ -83,6 +103,7 @@
             </div>
         </div>
     <?php endif; ?>
+    -->
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">
